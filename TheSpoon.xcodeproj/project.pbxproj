@@ -8,14 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1EE7C52529230BD0004D3224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C52429230BD0004D3224 /* AppDelegate.swift */; };
-		1EE7C52729230BD0004D3224 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C52629230BD0004D3224 /* SceneDelegate.swift */; };
-		1EE7C52929230BD0004D3224 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C52829230BD0004D3224 /* ViewController.swift */; };
-		1EE7C52C29230BD0004D3224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE7C52A29230BD0004D3224 /* Main.storyboard */; };
+		1EE7C52929230BD0004D3224 /* SPNMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C52829230BD0004D3224 /* SPNMainViewController.swift */; };
 		1EE7C52E29230BD1004D3224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EE7C52D29230BD1004D3224 /* Assets.xcassets */; };
 		1EE7C53129230BD1004D3224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE7C52F29230BD1004D3224 /* LaunchScreen.storyboard */; };
 		1EE7C53C29230BD1004D3224 /* TheSpoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C53B29230BD1004D3224 /* TheSpoonTests.swift */; };
 		1EE7C54629230BD1004D3224 /* TheSpoonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C54529230BD1004D3224 /* TheSpoonUITests.swift */; };
 		1EE7C54829230BD1004D3224 /* TheSpoonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C54729230BD1004D3224 /* TheSpoonUITestsLaunchTests.swift */; };
+		1EE7C55529230CBC004D3224 /* SPNRestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C55429230CBC004D3224 /* SPNRestaurantListViewController.swift */; };
+		1EE7C55729230E57004D3224 /* SPNRestaurantListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C55629230E57004D3224 /* SPNRestaurantListTableViewCell.swift */; };
+		1EE7C55929230F29004D3224 /* SPNRestaurantStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C55829230F29004D3224 /* SPNRestaurantStore.swift */; };
+		1EE7C55B29230F63004D3224 /* SPNRestaurantDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C55A29230F63004D3224 /* SPNRestaurantDTO.swift */; };
+		1EE7C55D29230F8B004D3224 /* SPNRestaurantAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C55C29230F8B004D3224 /* SPNRestaurantAPI.swift */; };
+		1EE7C55F292310FE004D3224 /* SPNRestaurantPayloadDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C55E292310FE004D3224 /* SPNRestaurantPayloadDTO.swift */; };
+		1EE7C56129240C4C004D3224 /* SPN+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C56029240C4C004D3224 /* SPN+URLSession.swift */; };
+		1EE7C56329240EC8004D3224 /* SPNRestaurantAddressDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C56229240EC8004D3224 /* SPNRestaurantAddressDTO.swift */; };
+		1EE7C56529240F5F004D3224 /* SPNRestaurantBestOfferDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C56429240F5F004D3224 /* SPNRestaurantBestOfferDTO.swift */; };
+		1EE7C56729240FA7004D3224 /* SPNRestaurantRatingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C56629240FA7004D3224 /* SPNRestaurantRatingDTO.swift */; };
+		1EE7C56A29241163004D3224 /* SPNRestaurantAggregateRatingsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C56929241163004D3224 /* SPNRestaurantAggregateRatingsDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +47,7 @@
 /* Begin PBXFileReference section */
 		1EE7C52129230BD0004D3224 /* TheSpoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSpoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE7C52429230BD0004D3224 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1EE7C52629230BD0004D3224 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1EE7C52829230BD0004D3224 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1EE7C52B29230BD0004D3224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EE7C52829230BD0004D3224 /* SPNMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNMainViewController.swift; sourceTree = "<group>"; };
 		1EE7C52D29230BD1004D3224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EE7C53029230BD1004D3224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EE7C53229230BD1004D3224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,17 @@
 		1EE7C54129230BD1004D3224 /* TheSpoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSpoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE7C54529230BD1004D3224 /* TheSpoonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSpoonUITests.swift; sourceTree = "<group>"; };
 		1EE7C54729230BD1004D3224 /* TheSpoonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSpoonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1EE7C55429230CBC004D3224 /* SPNRestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantListViewController.swift; sourceTree = "<group>"; };
+		1EE7C55629230E57004D3224 /* SPNRestaurantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantListTableViewCell.swift; sourceTree = "<group>"; };
+		1EE7C55829230F29004D3224 /* SPNRestaurantStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantStore.swift; sourceTree = "<group>"; };
+		1EE7C55A29230F63004D3224 /* SPNRestaurantDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantDTO.swift; sourceTree = "<group>"; };
+		1EE7C55C29230F8B004D3224 /* SPNRestaurantAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantAPI.swift; sourceTree = "<group>"; };
+		1EE7C55E292310FE004D3224 /* SPNRestaurantPayloadDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantPayloadDTO.swift; sourceTree = "<group>"; };
+		1EE7C56029240C4C004D3224 /* SPN+URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SPN+URLSession.swift"; sourceTree = "<group>"; };
+		1EE7C56229240EC8004D3224 /* SPNRestaurantAddressDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantAddressDTO.swift; sourceTree = "<group>"; };
+		1EE7C56429240F5F004D3224 /* SPNRestaurantBestOfferDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantBestOfferDTO.swift; sourceTree = "<group>"; };
+		1EE7C56629240FA7004D3224 /* SPNRestaurantRatingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantRatingDTO.swift; sourceTree = "<group>"; };
+		1EE7C56929241163004D3224 /* SPNRestaurantAggregateRatingsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantAggregateRatingsDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +118,16 @@
 			isa = PBXGroup;
 			children = (
 				1EE7C52429230BD0004D3224 /* AppDelegate.swift */,
-				1EE7C52629230BD0004D3224 /* SceneDelegate.swift */,
-				1EE7C52829230BD0004D3224 /* ViewController.swift */,
-				1EE7C52A29230BD0004D3224 /* Main.storyboard */,
+				1EE7C52829230BD0004D3224 /* SPNMainViewController.swift */,
 				1EE7C52D29230BD1004D3224 /* Assets.xcassets */,
 				1EE7C52F29230BD1004D3224 /* LaunchScreen.storyboard */,
 				1EE7C53229230BD1004D3224 /* Info.plist */,
+				1EE7C55429230CBC004D3224 /* SPNRestaurantListViewController.swift */,
+				1EE7C55829230F29004D3224 /* SPNRestaurantStore.swift */,
+				1EE7C55C29230F8B004D3224 /* SPNRestaurantAPI.swift */,
+				1EE7C56829240FBD004D3224 /* DTOs */,
+				1EE7C55629230E57004D3224 /* SPNRestaurantListTableViewCell.swift */,
+				1EE7C56029240C4C004D3224 /* SPN+URLSession.swift */,
 			);
 			path = TheSpoon;
 			sourceTree = "<group>";
@@ -125,6 +147,19 @@
 				1EE7C54729230BD1004D3224 /* TheSpoonUITestsLaunchTests.swift */,
 			);
 			path = TheSpoonUITests;
+			sourceTree = "<group>";
+		};
+		1EE7C56829240FBD004D3224 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				1EE7C55A29230F63004D3224 /* SPNRestaurantDTO.swift */,
+				1EE7C56629240FA7004D3224 /* SPNRestaurantRatingDTO.swift */,
+				1EE7C56429240F5F004D3224 /* SPNRestaurantBestOfferDTO.swift */,
+				1EE7C56229240EC8004D3224 /* SPNRestaurantAddressDTO.swift */,
+				1EE7C55E292310FE004D3224 /* SPNRestaurantPayloadDTO.swift */,
+				1EE7C56929241163004D3224 /* SPNRestaurantAggregateRatingsDTO.swift */,
+			);
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +268,6 @@
 			files = (
 				1EE7C53129230BD1004D3224 /* LaunchScreen.storyboard in Resources */,
 				1EE7C52E29230BD1004D3224 /* Assets.xcassets in Resources */,
-				1EE7C52C29230BD0004D3224 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +292,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EE7C52929230BD0004D3224 /* ViewController.swift in Sources */,
+				1EE7C55929230F29004D3224 /* SPNRestaurantStore.swift in Sources */,
+				1EE7C55B29230F63004D3224 /* SPNRestaurantDTO.swift in Sources */,
+				1EE7C55729230E57004D3224 /* SPNRestaurantListTableViewCell.swift in Sources */,
+				1EE7C52929230BD0004D3224 /* SPNMainViewController.swift in Sources */,
+				1EE7C55F292310FE004D3224 /* SPNRestaurantPayloadDTO.swift in Sources */,
+				1EE7C55529230CBC004D3224 /* SPNRestaurantListViewController.swift in Sources */,
+				1EE7C56729240FA7004D3224 /* SPNRestaurantRatingDTO.swift in Sources */,
+				1EE7C56129240C4C004D3224 /* SPN+URLSession.swift in Sources */,
+				1EE7C55D29230F8B004D3224 /* SPNRestaurantAPI.swift in Sources */,
+				1EE7C56A29241163004D3224 /* SPNRestaurantAggregateRatingsDTO.swift in Sources */,
+				1EE7C56329240EC8004D3224 /* SPNRestaurantAddressDTO.swift in Sources */,
 				1EE7C52529230BD0004D3224 /* AppDelegate.swift in Sources */,
-				1EE7C52729230BD0004D3224 /* SceneDelegate.swift in Sources */,
+				1EE7C56529240F5F004D3224 /* SPNRestaurantBestOfferDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +341,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1EE7C52A29230BD0004D3224 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1EE7C52B29230BD0004D3224 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1EE7C52F29230BD1004D3224 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -440,11 +476,13 @@
 				DEVELOPMENT_TEAM = 6QMV4WSRB3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheSpoon/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,11 +506,13 @@
 				DEVELOPMENT_TEAM = 6QMV4WSRB3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TheSpoon/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
