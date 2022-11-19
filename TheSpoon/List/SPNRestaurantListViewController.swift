@@ -102,17 +102,9 @@ class SPNRestaurantListViewController: UIViewController {
         
         if let popover = viewController.popoverPresentationController {
             popover.barButtonItem = sender
-            popover.delegate = self
-            popover.permittedArrowDirections = [.up]
             present(navController, animated: true, completion:nil)
         }
     }
-}
-
-// MARK: - <UIPopoverPresentationControllerDelegate>
-
-extension SPNRestaurantListViewController: UIPopoverPresentationControllerDelegate {
-    
 }
 
 // MARK: - <UITableViewDataSource>

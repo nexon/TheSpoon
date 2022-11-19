@@ -11,6 +11,9 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
 
     // MARK: - Private Properties
   
+    private let locationView = SPNRestaurantDetailItemView(type: .location)
+    private let priceRangeView = SPNRestaurantDetailItemView(type: .priceRange)
+    private let cousineTypeView = SPNRestaurantDetailItemView(type: .typeCousine)
     private let emptyImage = UIImage(named: "empty-heart")?.withRenderingMode(.alwaysOriginal)
     private let filledImage = UIImage(named: "filled-heart")?.withRenderingMode(.alwaysOriginal)
     private var favoriteButtonContainer = UIView(frame: .zero)
@@ -18,10 +21,7 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
     private var stackView = UIStackView()
     private var restaurantImageView = UIImageView()
     private var restaurantTitleLabel = UILabel(frame: .zero)
-    private var restaurantLocationLabel = UILabel(frame: .zero)
-    private var restaurantPriceRangeLabel = UILabel(frame: .zero)
     private var restaurantRatingLabel = UILabel(frame: .zero)
-    private var restaurantCousineTypeLabel = UILabel(frame: .zero)
     private var restaurantBestOffer = UILabel(frame: .zero)
     private var informationStack = UIStackView()
     private var viewModel: SPNRestaurantListTableViewModel?
@@ -46,18 +46,19 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    /// Configure the cell with the given information
+    /// Configure the cell with the given text
     /// - Parameters:
-    ///   - viewModel: The `viewModel` where the business logic and information for the specific row is located.
+    ///   - viewModel: The `viewModel` where the business logic and text for the specific row is located.
     ///   - onFavorite: A block that will be triggering the taps for favoriting the restaurant.
     func configure(with viewModel: SPNRestaurantListTableViewModel, onFavorite: @escaping (_ identifier: String) -> Void) {
         self.viewModel = viewModel
         self.onFavorite = onFavorite
+        locationView.text = viewModel.location
+        priceRangeView.text = viewModel.priceRange
+        cousineTypeView.text = viewModel.type
+        
         restaurantTitleLabel.text = viewModel.name
-        restaurantLocationLabel.text = viewModel.location
-        restaurantPriceRangeLabel.text = viewModel.priceRange
         restaurantRatingLabel.text = "\(viewModel.overallRating)"
-        restaurantCousineTypeLabel.text = viewModel.type
         restaurantBestOffer.text = viewModel.bestOffer
         
         viewModel.downloadImage { [weak self] result in
@@ -116,54 +117,10 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
         restaurantTitleLabel.font = .preferredFont(forTextStyle: .headline)
         restaurantTitleLabel.numberOfLines = 0
         
-        informationStack.addArrangedSubview(restaurantTitleLabel)
-        
-        // Restaurant Location
-        
-        let locationContainer = UIStackView()
-        locationContainer.translatesAutoresizingMaskIntoConstraints = false
-        locationContainer.spacing = 3
-        locationContainer.axis = .horizontal
-        
-        locationContainer.addArrangedSubview(UIImageView(image: UIImage(named:"location")))
-        restaurantLocationLabel.translatesAutoresizingMaskIntoConstraints = false
-        restaurantLocationLabel.font = .preferredFont(forTextStyle: .subheadline)
-        restaurantLocationLabel.numberOfLines = 0
-        
-        locationContainer.addArrangedSubview(restaurantLocationLabel)
-        
-        informationStack.addArrangedSubview(locationContainer)
-        
-        // Restaurant Price Range
-        
-        let priceRangeContainer = UIStackView()
-        priceRangeContainer.translatesAutoresizingMaskIntoConstraints = false
-        priceRangeContainer.spacing = 3
-        priceRangeContainer.axis = .horizontal
-        
-        priceRangeContainer.addArrangedSubview(UIImageView(image: UIImage(named: "cash")))
-        restaurantPriceRangeLabel.translatesAutoresizingMaskIntoConstraints = false
-        restaurantPriceRangeLabel.font = .preferredFont(forTextStyle: .caption1)
-        restaurantPriceRangeLabel.numberOfLines = 0
-        
-        priceRangeContainer.addArrangedSubview(restaurantPriceRangeLabel)
-        
-        informationStack.addArrangedSubview(priceRangeContainer)
-        
-        // Restaurant Cousine type
-        
-        let cousineTypeContainer = UIStackView()
-        cousineTypeContainer.translatesAutoresizingMaskIntoConstraints = false
-        cousineTypeContainer.spacing = 3
-        cousineTypeContainer.axis = .horizontal
-        cousineTypeContainer.addArrangedSubview(UIImageView(image: UIImage(named: "food")))
-        restaurantCousineTypeLabel.translatesAutoresizingMaskIntoConstraints = false
-        restaurantCousineTypeLabel.font = .preferredFont(forTextStyle: .caption1)
-        restaurantCousineTypeLabel.numberOfLines = 0
-        
-        cousineTypeContainer.addArrangedSubview(restaurantCousineTypeLabel)
-        
-        informationStack.addArrangedSubview(cousineTypeContainer)
+        informationStack.addArrangedSubview(restaurantTitleLabel)  
+        informationStack.addArrangedSubview(locationView)
+        informationStack.addArrangedSubview(priceRangeView)
+        informationStack.addArrangedSubview(cousineTypeView)
         
         let horizontalStackView = UIStackView()
         horizontalStackView.axis = .horizontal
@@ -171,7 +128,7 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
         
         horizontalStackView.addArrangedSubview(informationStack)
         
-        // Rating info
+        // Rating Information
         
         let ratingContainerView = UIView(frame: .zero)
         ratingContainerView.translatesAutoresizingMaskIntoConstraints = false

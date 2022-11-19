@@ -32,7 +32,7 @@ final class SPNRestaurantListController {
     
     /// Obtain Information for an especific row
     ///
-    /// - Parameter row: The row you need to get information
+    /// - Parameter row: The row you need to get text
     /// - Returns: A `SPNRestaurantListTableViewModel` is the row exist. `nil` if it not exist
     func item(at row: Int) -> SPNRestaurantListTableViewModel? {
         guard row < items.count else { return nil }

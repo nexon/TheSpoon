@@ -7,20 +7,7 @@
 
 import UIKit
 
-enum SPNSortingOptions: CaseIterable {
-    case name
-    case rating
-    
-    var title: String {
-        switch self {
-        case .name:
-            return "Name"
-        case .rating:
-            return "Rating"
-        }
-    }
-}
-
+/// A Class that provides a list for showing sorting options.
 final class SPNSortListViewController: UIViewController {
     // MARK: - Private Properties
 
@@ -29,9 +16,14 @@ final class SPNSortListViewController: UIViewController {
     private var selectedOption: SPNSortingOptions?
     private var onSelection: (_ selectedOption: SPNSortingOptions) -> Void
     
-    
     // MARK: - Public Function(s)
     
+    /// Initializer
+    ///
+    /// - Parameters:
+    ///   - options: All the possible items that can appear on the list and the user can select.
+    ///   - selectedOption: The default selected option.
+    ///   - onSelection: A completion block that get called after the user has made a selection
     init(options: [SPNSortingOptions], selectedOption: SPNSortingOptions? = nil, onSelection: @escaping (_ selectedOption: SPNSortingOptions) -> Void) {
         self.options = options
         self.selectedOption = selectedOption

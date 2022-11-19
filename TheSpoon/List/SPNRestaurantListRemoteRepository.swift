@@ -15,7 +15,7 @@ struct SPNRestaurantListRemoteRepository: SPNRestaurantListRepository {
     
     /// Initializer.
     ///
-    /// - Parameter store: The store that will be the datasource for getting the information that we need.
+    /// - Parameter store: The store that will be the datasource for getting the text that we need.
     init(store: SPNRestaurantStore = SPNRestaurantAPI()) {
         self.store = store
     }

@@ -16,7 +16,6 @@ protocol SPNRestaurantStore {
     ///   - completion: Completion block that get called once the request is finished and we get back the response.
     func read(parameters: [String: Any], completion: @escaping (Result<[SPNRestaurantDTO], Error>) -> Void)
     
-    
     /// Send a request to update the favorite option in a restaurant.
     /// 
     /// - Parameters:
