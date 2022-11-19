@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let viewController = SPNRestaurantListViewController()
-        window?.rootViewController = viewController
+        let navController = UINavigationController(rootViewController: SPNRestaurantListViewController(dependencies: SPNRestaurantListDependencyContainer()))
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
         
         return true

@@ -20,6 +20,7 @@ struct SPNRestaurantDTO: Codable {
         case aggregateRatings
         case bestOffer
         case address
+        case photos = "mainPhoto"
     }
     
     let name: String
@@ -30,6 +31,7 @@ struct SPNRestaurantDTO: Codable {
     let address: SPNRestaurantAddressDTO
     let aggregateRatings: [SPNRestaurantRatingDTO]
     let bestOffer: SPNRestaurantBestOfferDTO
+    let photos: [SPNRestaurantPhotoDTO]
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -44,5 +46,7 @@ struct SPNRestaurantDTO: Codable {
         let ratings = try container.decode(SPNRestaurantAggregateRatingsDTO.self, forKey: .aggregateRatings)
         aggregateRatings = ratings.array
         
+        let photos = try container.decodeIfPresent(SPNRestaurantPhotosDTO.self, forKey: .photos)
+        self.photos = photos?.array ?? []
     }
 }

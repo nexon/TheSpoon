@@ -1,5 +1,5 @@
 //
-//  SPNRestaurantAggregateRatingsDTO.swift
+//  SPNRestaurantPhotos.swift
 //  TheSpoon
 //
 //  Created by Alberto Lagos on 15-11-22.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct SPNRestaurantAggregateRatingsDTO: Codable {
-    var array: [SPNRestaurantRatingDTO]
+struct SPNRestaurantPhotosDTO: Codable {
+    var array: [SPNRestaurantPhotoDTO]
         
     // Define DefinitionKeys type needed for creating
     // decoding container from JSONDecoder
@@ -28,21 +28,14 @@ struct SPNRestaurantAggregateRatingsDTO: Codable {
         }
     }
     
-    private struct RatingDetails: Codable {
-        let ratingValue: Double
-        let reviewCount: Int
-    }
-
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: DefinitionKeys.self)
 
         array = try container.allKeys.compactMap { key in
             guard let name = DefinitionKeys(stringValue: key.stringValue) else { return nil }
-            let details = try container.decode(RatingDetails.self, forKey: name)
             
-            return SPNRestaurantRatingDTO(name: name.stringValue,
-                                          ratingValue: details.ratingValue,
-                                          reviewCount: details.reviewCount)
+            return SPNRestaurantPhotoDTO(resolution: name.stringValue,
+                                         url: try container.decode(URL.self, forKey: name))
         }
 
     }
