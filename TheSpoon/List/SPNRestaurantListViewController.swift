@@ -7,7 +7,8 @@
 
 import UIKit
 
-class SPNRestaurantListViewController: UIViewController {
+/// UI Class for showing the List of Restaurants
+final class SPNRestaurantListViewController: UIViewController {
 
     // MARK: - Type Alias
     
@@ -64,6 +65,7 @@ class SPNRestaurantListViewController: UIViewController {
         tableView = UITableView(frame: .zero, style: .plain)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.dataSource = self
+        tableView.delaysContentTouches = false
         tableView.register(SPNRestaurantListTableViewCell.self,
                            forCellReuseIdentifier: String(describing: SPNRestaurantListTableViewCell.self))
         
@@ -118,7 +120,7 @@ extension SPNRestaurantListViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SPNRestaurantListTableViewCell.self),
                                                        for: indexPath) as? SPNRestaurantListTableViewCell,
               let entity = controller.item(at: indexPath.row) else { return UITableViewCell() }
-    
+        cell.selectionStyle = .none
         cell.configure(with: entity) { [weak self] id in
             guard let strongSelf = self else { return }
             strongSelf.toggle(id)

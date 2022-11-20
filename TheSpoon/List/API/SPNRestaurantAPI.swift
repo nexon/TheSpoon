@@ -20,11 +20,10 @@ final class SPNRestaurantAPI: SPNRestaurantStore {
             completion(.failure(SPNError.noURL))
             return
         }
-        
-        let urlRequest = URLRequest(url: url)
+
         task?.cancel()
         
-        task = manager.dataTask(with: urlRequest) { data, response, error in
+        task = manager.dataTask(with: URLRequest(url: url)) { data, response, error in
             guard (response as? HTTPURLResponse)?.statusCode == 200 else {
                 completion(.failure(SPNError.fetchingFailed))
                 return

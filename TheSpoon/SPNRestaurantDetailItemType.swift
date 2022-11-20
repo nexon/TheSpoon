@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// A data structure that represent specific information for a Restaurant.
 enum SPNRestaurantDetailItemType {
     case priceRange
     case location

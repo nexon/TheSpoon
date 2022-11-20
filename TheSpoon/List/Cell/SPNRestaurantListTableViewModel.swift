@@ -31,7 +31,10 @@ final class SPNRestaurantListTableViewModel {
     var overallRating: Double { entity.ratings.map(\.ratingValue).reduce(0, +) }
     
     /// `true` if the restaurant is a favorite one for the user
-    var isFavorite: Bool { entity.isFavorite }
+    var isFavorite: Bool {
+        get { entity.isFavorite }
+        set { entity.isFavorite = newValue }
+    }
     
     /// The type of food that this restaurant has.
     var type: String { entity.type }
@@ -60,8 +63,9 @@ final class SPNRestaurantListTableViewModel {
     /// Initializer
     ///
     /// - Parameter entity: The Entity that represent a Restaurant in the app.
-    init(entity: SPNRestaurantEntity) {
+    init(entity: SPNRestaurantEntity, isFavorite: Bool = false) {
         self.entity = entity
+        self.isFavorite = isFavorite
     }
     
     /// Download the Restaurant main image.

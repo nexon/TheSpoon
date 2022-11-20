@@ -16,7 +16,6 @@
 		1EE7C52529230BD0004D3224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C52429230BD0004D3224 /* AppDelegate.swift */; };
 		1EE7C52E29230BD1004D3224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EE7C52D29230BD1004D3224 /* Assets.xcassets */; };
 		1EE7C53129230BD1004D3224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE7C52F29230BD1004D3224 /* LaunchScreen.storyboard */; };
-		1EE7C53C29230BD1004D3224 /* TheSpoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C53B29230BD1004D3224 /* TheSpoonTests.swift */; };
 		1EE7C55529230CBC004D3224 /* SPNRestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C55429230CBC004D3224 /* SPNRestaurantListViewController.swift */; };
 		1EE7C55729230E57004D3224 /* SPNRestaurantListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C55629230E57004D3224 /* SPNRestaurantListTableViewCell.swift */; };
 		1EE7C55929230F29004D3224 /* SPNRestaurantStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C55829230F29004D3224 /* SPNRestaurantStore.swift */; };
@@ -35,7 +34,6 @@
 		1EE7C57729241A18004D3224 /* SPNRestaurantListDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C57629241A18004D3224 /* SPNRestaurantListDependencyContainer.swift */; };
 		1EE7C57A29241A4B004D3224 /* HasRestaurantRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C57929241A4B004D3224 /* HasRestaurantRepository.swift */; };
 		1EE7C57C29241A85004D3224 /* HasRestaurantStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C57B29241A85004D3224 /* HasRestaurantStore.swift */; };
-		1EE7C57F2924444B004D3224 /* SPNRestaurantHeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C57E2924444B004D3224 /* SPNRestaurantHeaderTitleView.swift */; };
 		1EE7C58429244DFF004D3224 /* SPNRestaurantListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C58329244DFF004D3224 /* SPNRestaurantListTableViewModel.swift */; };
 		1EE7C58629245049004D3224 /* SPNRestaurantPhotosDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C58529245049004D3224 /* SPNRestaurantPhotosDTO.swift */; };
 		1EE7C58829245251004D3224 /* SPNRestaurantPhotoDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C58729245251004D3224 /* SPNRestaurantPhotoDTO.swift */; };
@@ -72,7 +70,6 @@
 		1EE7C53029230BD1004D3224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EE7C53229230BD1004D3224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EE7C53729230BD1004D3224 /* TheSpoonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSpoonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EE7C53B29230BD1004D3224 /* TheSpoonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSpoonTests.swift; sourceTree = "<group>"; };
 		1EE7C54129230BD1004D3224 /* TheSpoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSpoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE7C55429230CBC004D3224 /* SPNRestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantListViewController.swift; sourceTree = "<group>"; };
 		1EE7C55629230E57004D3224 /* SPNRestaurantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantListTableViewCell.swift; sourceTree = "<group>"; };
@@ -92,7 +89,6 @@
 		1EE7C57629241A18004D3224 /* SPNRestaurantListDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantListDependencyContainer.swift; sourceTree = "<group>"; };
 		1EE7C57929241A4B004D3224 /* HasRestaurantRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasRestaurantRepository.swift; sourceTree = "<group>"; };
 		1EE7C57B29241A85004D3224 /* HasRestaurantStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasRestaurantStore.swift; sourceTree = "<group>"; };
-		1EE7C57E2924444B004D3224 /* SPNRestaurantHeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantHeaderTitleView.swift; sourceTree = "<group>"; };
 		1EE7C58329244DFF004D3224 /* SPNRestaurantListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantListTableViewModel.swift; sourceTree = "<group>"; };
 		1EE7C58529245049004D3224 /* SPNRestaurantPhotosDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantPhotosDTO.swift; sourceTree = "<group>"; };
 		1EE7C58729245251004D3224 /* SPNRestaurantPhotoDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantPhotoDTO.swift; sourceTree = "<group>"; };
@@ -145,9 +141,38 @@
 		1E3D31B1292979E4007A60CB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1EA528532928266100385DAB /* Entities */,
+				1EE7C56829240FBD004D3224 /* DTOs */,
 				1E3D31A729296EA2007A60CB /* SPNError.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		1E3D31B2292AA772007A60CB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1EE7C58329244DFF004D3224 /* SPNRestaurantListTableViewModel.swift */,
+				1EE7C55629230E57004D3224 /* SPNRestaurantListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1E3D31B3292AA77F007A60CB /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				1EE7C56D29241703004D3224 /* SPNRestaurantListRepository.swift */,
+				1EE7C57129241765004D3224 /* SPNRestaurantListRemoteRepository.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		1E3D31B4292AA79E007A60CB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1EE7C55829230F29004D3224 /* SPNRestaurantStore.swift */,
+				1EE7C55C29230F8B004D3224 /* SPNRestaurantAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		1EA528532928266100385DAB /* Entities */ = {
@@ -186,8 +211,6 @@
 				1E3D31B1292979E4007A60CB /* Common */,
 				1E3D31B0292979D6007A60CB /* Detail */,
 				1E3D31AB29297494007A60CB /* Sorting */,
-				1EA528532928266100385DAB /* Entities */,
-				1EE7C56829240FBD004D3224 /* DTOs */,
 				1EE7C57D29241CCE004D3224 /* List */,
 				1EE7C57829241A3A004D3224 /* Dependencies */,
 				1EE7C575292419FE004D3224 /* Dependency Containers */,
@@ -195,8 +218,6 @@
 				1EE7C52D29230BD1004D3224 /* Assets.xcassets */,
 				1EE7C52F29230BD1004D3224 /* LaunchScreen.storyboard */,
 				1EE7C53229230BD1004D3224 /* Info.plist */,
-				1EE7C57E2924444B004D3224 /* SPNRestaurantHeaderTitleView.swift */,
-				1EE7C58329244DFF004D3224 /* SPNRestaurantListTableViewModel.swift */,
 			);
 			path = TheSpoon;
 			sourceTree = "<group>";
@@ -204,7 +225,6 @@
 		1EE7C53A29230BD1004D3224 /* TheSpoonTests */ = {
 			isa = PBXGroup;
 			children = (
-				1EE7C53B29230BD1004D3224 /* TheSpoonTests.swift */,
 			);
 			path = TheSpoonTests;
 			sourceTree = "<group>";
@@ -244,13 +264,11 @@
 		1EE7C57D29241CCE004D3224 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				1EE7C56D29241703004D3224 /* SPNRestaurantListRepository.swift */,
-				1EE7C57129241765004D3224 /* SPNRestaurantListRemoteRepository.swift */,
+				1E3D31B4292AA79E007A60CB /* API */,
+				1E3D31B3292AA77F007A60CB /* Repo */,
+				1E3D31B2292AA772007A60CB /* Cell */,
 				1EE7C55429230CBC004D3224 /* SPNRestaurantListViewController.swift */,
 				1EE7C56B292416D1004D3224 /* SPNRestaurantListController.swift */,
-				1EE7C55629230E57004D3224 /* SPNRestaurantListTableViewCell.swift */,
-				1EE7C55829230F29004D3224 /* SPNRestaurantStore.swift */,
-				1EE7C55C29230F8B004D3224 /* SPNRestaurantAPI.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -414,7 +432,6 @@
 				1EA5285229281F4C00385DAB /* SPNSortListViewController.swift in Sources */,
 				1EE7C56C292416D1004D3224 /* SPNRestaurantListController.swift in Sources */,
 				1EE7C56529240F5F004D3224 /* SPNRestaurantBestOfferDTO.swift in Sources */,
-				1EE7C57F2924444B004D3224 /* SPNRestaurantHeaderTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +439,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EE7C53C29230BD1004D3224 /* TheSpoonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

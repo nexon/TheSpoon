@@ -7,15 +7,15 @@
 
 import UIKit
 
-class SPNRestaurantListTableViewCell: UITableViewCell {
+final class SPNRestaurantListTableViewCell: UITableViewCell {
 
     // MARK: - Private Properties
-  
+    
+    private static let emptyImage = UIImage(named: "empty-heart")?.withRenderingMode(.alwaysOriginal)
+    private static let filledImage = UIImage(named: "filled-heart")?.withRenderingMode(.alwaysOriginal)
     private let locationView = SPNRestaurantDetailItemView(type: .location)
     private let priceRangeView = SPNRestaurantDetailItemView(type: .priceRange)
     private let cousineTypeView = SPNRestaurantDetailItemView(type: .typeCousine)
-    private let emptyImage = UIImage(named: "empty-heart")?.withRenderingMode(.alwaysOriginal)
-    private let filledImage = UIImage(named: "filled-heart")?.withRenderingMode(.alwaysOriginal)
     private var favoriteButtonContainer = UIView(frame: .zero)
     private var favoriteButton = UIButton()
     private var stackView = UIStackView()
@@ -29,7 +29,10 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .default, reuseIdentifier: reuseIdentifier)
+        contentView.isUserInteractionEnabled = true
+        isUserInteractionEnabled = true
         selectionStyle = .none
+        
         configureStackView()
         configureRestaurantImageView()
         configureInformationViews()
@@ -40,10 +43,6 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
     }
     
     /// Configure the cell with the given text
@@ -61,6 +60,9 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
         restaurantRatingLabel.text = "\(viewModel.overallRating)"
         restaurantBestOffer.text = viewModel.bestOffer
         
+        favoriteButton.addTarget(self, action: #selector(didPressFavoriteButton(_:)), for: .touchUpInside)
+        
+        favoriteButton.setImage(viewModel.isFavorite ? Self.filledImage : Self.emptyImage, for: .normal)
         viewModel.downloadImage { [weak self] result in
             guard let strongSelf = self else { return }
             
@@ -78,6 +80,7 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
         super.prepareForReuse()
         viewModel?.cancelDownload()
         restaurantImageView.image = nil
+        favoriteButton.removeTarget(self, action: #selector(didPressFavoriteButton(_:)), for: .touchUpInside)
     }
 
     // MARK: - Private Properties
@@ -113,11 +116,22 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
         
         // Restaurant Name
         
+        let restaurantTitleContainerView = UIView(frame: .zero)
+        restaurantTitleContainerView.translatesAutoresizingMaskIntoConstraints = false
+        restaurantTitleContainerView.addSubview(restaurantTitleLabel)
+        
+        NSLayoutConstraint.activate([
+            restaurantTitleLabel.topAnchor.constraint(equalTo: restaurantTitleContainerView.topAnchor),
+            restaurantTitleLabel.trailingAnchor.constraint(equalTo: restaurantTitleContainerView.trailingAnchor),
+            restaurantTitleLabel.bottomAnchor.constraint(equalTo: restaurantTitleContainerView.bottomAnchor),
+            restaurantTitleLabel.leadingAnchor.constraint(equalTo: restaurantTitleContainerView.leadingAnchor, constant: 10),
+        ])
+        
         restaurantTitleLabel.translatesAutoresizingMaskIntoConstraints = false
         restaurantTitleLabel.font = .preferredFont(forTextStyle: .headline)
         restaurantTitleLabel.numberOfLines = 0
         
-        informationStack.addArrangedSubview(restaurantTitleLabel)  
+        informationStack.addArrangedSubview(restaurantTitleContainerView)
         informationStack.addArrangedSubview(locationView)
         informationStack.addArrangedSubview(priceRangeView)
         informationStack.addArrangedSubview(cousineTypeView)
@@ -156,9 +170,11 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
         favoriteButtonContainer.backgroundColor = .white
         favoriteButtonContainer.translatesAutoresizingMaskIntoConstraints = false
         favoriteButton.translatesAutoresizingMaskIntoConstraints = false
-        favoriteButton.setImage(emptyImage, for: .normal)
+        favoriteButton.setImage(Self.emptyImage, for: .normal)
         favoriteButtonContainer.addSubview(favoriteButton)
+        
         addSubview(favoriteButtonContainer)
+        contentView.bringSubviewToFront(favoriteButton)
         
         NSLayoutConstraint.activate([
             favoriteButtonContainer.topAnchor.constraint(equalTo: topAnchor, constant: 20),
@@ -170,8 +186,6 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
             favoriteButton.heightAnchor.constraint(equalToConstant: 28),
             favoriteButton.widthAnchor.constraint(equalToConstant: 28)
         ])
-        
-        favoriteButton.addTarget(self, action: #selector(didPressFavoriteButton(_:)), for: .touchUpInside)
     }
     
     private func configureOfferView() {
@@ -197,8 +211,10 @@ class SPNRestaurantListTableViewCell: UITableViewCell {
             restaurantBestOffer.trailingAnchor.constraint(equalTo: offerViewContainer.trailingAnchor),
         ])
     }
+    
     @objc
     private func didPressFavoriteButton(_ sender: UIButton) {
-        print("PRESSED!!")
+        guard let identifier = viewModel?.identifier else { return }
+        onFavorite?(identifier)
     }
 }
