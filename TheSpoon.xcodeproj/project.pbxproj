@@ -11,6 +11,9 @@
 		1E3D31AA2929748A007A60CB /* SPNSortingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3D31A92929748A007A60CB /* SPNSortingOptions.swift */; };
 		1E3D31AD292975D3007A60CB /* SPNRestaurantDetailItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3D31AC292975D3007A60CB /* SPNRestaurantDetailItemView.swift */; };
 		1E3D31AF29297788007A60CB /* SPNRestaurantDetailItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3D31AE29297788007A60CB /* SPNRestaurantDetailItemType.swift */; };
+		1E3D31B6292AA953007A60CB /* TestSPNRestaurantListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3D31B5292AA953007A60CB /* TestSPNRestaurantListController.swift */; };
+		1E3D31B8292AA967007A60CB /* TestSPNRestaurantListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3D31B7292AA967007A60CB /* TestSPNRestaurantListTableViewModel.swift */; };
+		1E3D31BB292AA991007A60CB /* SPNRestaurantListMockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3D31BA292AA991007A60CB /* SPNRestaurantListMockRepository.swift */; };
 		1EA5285229281F4C00385DAB /* SPNSortListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA5285129281F4C00385DAB /* SPNSortListViewController.swift */; };
 		1EA528552928267700385DAB /* SPNRestaurantRatingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA528542928267700385DAB /* SPNRestaurantRatingEntity.swift */; };
 		1EE7C52529230BD0004D3224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C52429230BD0004D3224 /* AppDelegate.swift */; };
@@ -48,13 +51,6 @@
 			remoteGlobalIDString = 1EE7C52029230BD0004D3224;
 			remoteInfo = TheSpoon;
 		};
-		1EE7C54229230BD1004D3224 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1EE7C51929230BD0004D3224 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1EE7C52029230BD0004D3224;
-			remoteInfo = TheSpoon;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +58,9 @@
 		1E3D31A92929748A007A60CB /* SPNSortingOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNSortingOptions.swift; sourceTree = "<group>"; };
 		1E3D31AC292975D3007A60CB /* SPNRestaurantDetailItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantDetailItemView.swift; sourceTree = "<group>"; };
 		1E3D31AE29297788007A60CB /* SPNRestaurantDetailItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantDetailItemType.swift; sourceTree = "<group>"; };
+		1E3D31B5292AA953007A60CB /* TestSPNRestaurantListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSPNRestaurantListController.swift; sourceTree = "<group>"; };
+		1E3D31B7292AA967007A60CB /* TestSPNRestaurantListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSPNRestaurantListTableViewModel.swift; sourceTree = "<group>"; };
+		1E3D31BA292AA991007A60CB /* SPNRestaurantListMockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantListMockRepository.swift; sourceTree = "<group>"; };
 		1EA5285129281F4C00385DAB /* SPNSortListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNSortListViewController.swift; sourceTree = "<group>"; };
 		1EA528542928267700385DAB /* SPNRestaurantRatingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantRatingEntity.swift; sourceTree = "<group>"; };
 		1EE7C52129230BD0004D3224 /* TheSpoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSpoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +69,6 @@
 		1EE7C53029230BD1004D3224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EE7C53229230BD1004D3224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EE7C53729230BD1004D3224 /* TheSpoonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSpoonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EE7C54129230BD1004D3224 /* TheSpoonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSpoonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE7C55429230CBC004D3224 /* SPNRestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantListViewController.swift; sourceTree = "<group>"; };
 		1EE7C55629230E57004D3224 /* SPNRestaurantListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantListTableViewCell.swift; sourceTree = "<group>"; };
 		1EE7C55829230F29004D3224 /* SPNRestaurantStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantStore.swift; sourceTree = "<group>"; };
@@ -104,13 +102,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1EE7C53429230BD1004D3224 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EE7C53E29230BD1004D3224 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -175,6 +166,14 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		1E3D31B9292AA975007A60CB /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1E3D31BA292AA991007A60CB /* SPNRestaurantListMockRepository.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		1EA528532928266100385DAB /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +199,6 @@
 			children = (
 				1EE7C52129230BD0004D3224 /* TheSpoon.app */,
 				1EE7C53729230BD1004D3224 /* TheSpoonTests.xctest */,
-				1EE7C54129230BD1004D3224 /* TheSpoonUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,6 +223,9 @@
 		1EE7C53A29230BD1004D3224 /* TheSpoonTests */ = {
 			isa = PBXGroup;
 			children = (
+				1E3D31B9292AA975007A60CB /* Mocks */,
+				1E3D31B5292AA953007A60CB /* TestSPNRestaurantListController.swift */,
+				1E3D31B7292AA967007A60CB /* TestSPNRestaurantListTableViewModel.swift */,
 			);
 			path = TheSpoonTests;
 			sourceTree = "<group>";
@@ -311,24 +312,6 @@
 			productReference = 1EE7C53729230BD1004D3224 /* TheSpoonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1EE7C54029230BD1004D3224 /* TheSpoonUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1EE7C55129230BD1004D3224 /* Build configuration list for PBXNativeTarget "TheSpoonUITests" */;
-			buildPhases = (
-				1EE7C53D29230BD1004D3224 /* Sources */,
-				1EE7C53E29230BD1004D3224 /* Frameworks */,
-				1EE7C53F29230BD1004D3224 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1EE7C54329230BD1004D3224 /* PBXTargetDependency */,
-			);
-			name = TheSpoonUITests;
-			productName = TheSpoonUITests;
-			productReference = 1EE7C54129230BD1004D3224 /* TheSpoonUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -344,10 +327,7 @@
 					};
 					1EE7C53629230BD1004D3224 = {
 						CreatedOnToolsVersion = 14.1;
-						TestTargetID = 1EE7C52029230BD0004D3224;
-					};
-					1EE7C54029230BD1004D3224 = {
-						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 						TestTargetID = 1EE7C52029230BD0004D3224;
 					};
 				};
@@ -367,7 +347,6 @@
 			targets = (
 				1EE7C52029230BD0004D3224 /* TheSpoon */,
 				1EE7C53629230BD1004D3224 /* TheSpoonTests */,
-				1EE7C54029230BD1004D3224 /* TheSpoonUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -383,13 +362,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1EE7C53529230BD1004D3224 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EE7C53F29230BD1004D3224 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -439,13 +411,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EE7C53D29230BD1004D3224 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				1E3D31B8292AA967007A60CB /* TestSPNRestaurantListTableViewModel.swift in Sources */,
+				1E3D31BB292AA991007A60CB /* SPNRestaurantListMockRepository.swift in Sources */,
+				1E3D31B6292AA953007A60CB /* TestSPNRestaurantListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,11 +424,6 @@
 			isa = PBXTargetDependency;
 			target = 1EE7C52029230BD0004D3224 /* TheSpoon */;
 			targetProxy = 1EE7C53829230BD1004D3224 /* PBXContainerItemProxy */;
-		};
-		1EE7C54329230BD1004D3224 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1EE7C52029230BD0004D3224 /* TheSpoon */;
-			targetProxy = 1EE7C54229230BD1004D3224 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -655,15 +618,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QMV4WSRB3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = theSpoon.TheSpoonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheSpoon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TheSpoon";
@@ -675,11 +645,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QMV4WSRB3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = theSpoon.TheSpoonTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -687,42 +663,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheSpoon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TheSpoon";
-			};
-			name = Release;
-		};
-		1EE7C55229230BD1004D3224 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6QMV4WSRB3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = theSpoon.TheSpoonUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheSpoon;
-			};
-			name = Debug;
-		};
-		1EE7C55329230BD1004D3224 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6QMV4WSRB3;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = theSpoon.TheSpoonUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheSpoon;
 			};
 			name = Release;
 		};
@@ -752,15 +692,6 @@
 			buildConfigurations = (
 				1EE7C54F29230BD1004D3224 /* Debug */,
 				1EE7C55029230BD1004D3224 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1EE7C55129230BD1004D3224 /* Build configuration list for PBXNativeTarget "TheSpoonUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1EE7C55229230BD1004D3224 /* Debug */,
-				1EE7C55329230BD1004D3224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
