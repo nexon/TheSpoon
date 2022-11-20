@@ -69,8 +69,10 @@ final class SPNRestaurantListTableViewCell: UITableViewCell {
             switch result {
             case let .success(image):
                 strongSelf.restaurantImageView.image = image
+                strongSelf.restaurantImageView.contentMode = .scaleToFill
             case .failure(_):
                 strongSelf.restaurantImageView.image = UIImage(named: "tf-logo")
+                strongSelf.restaurantImageView.contentMode = .scaleAspectFit
                 break
             }
         }
@@ -100,7 +102,7 @@ final class SPNRestaurantListTableViewCell: UITableViewCell {
     }
     
     private func configureRestaurantImageView() {
-        restaurantImageView.contentMode = .scaleAspectFit
+        restaurantImageView.contentMode = .scaleToFill
         restaurantImageView.translatesAutoresizingMaskIntoConstraints = false
         stackView.addArrangedSubview(restaurantImageView)
         
@@ -202,7 +204,7 @@ final class SPNRestaurantListTableViewCell: UITableViewCell {
         
         NSLayoutConstraint.activate([
             offerViewContainer.topAnchor.constraint(equalTo: topAnchor, constant: 60),
-            offerViewContainer.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 18),
+            offerViewContainer.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             offerViewContainer.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 140),
             offerViewContainer.heightAnchor.constraint(equalToConstant: 30),
             restaurantBestOffer.topAnchor.constraint(equalTo: offerViewContainer.topAnchor),
