@@ -14,6 +14,7 @@
 		1E3D31B6292AA953007A60CB /* TestSPNRestaurantListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3D31B5292AA953007A60CB /* TestSPNRestaurantListController.swift */; };
 		1E3D31B8292AA967007A60CB /* TestSPNRestaurantListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3D31B7292AA967007A60CB /* TestSPNRestaurantListTableViewModel.swift */; };
 		1E3D31BB292AA991007A60CB /* SPNRestaurantListMockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3D31BA292AA991007A60CB /* SPNRestaurantListMockRepository.swift */; };
+		1E3D31C0292B85BF007A60CB /* UIViewController+SPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3D31BF292B85BF007A60CB /* UIViewController+SPN.swift */; };
 		1EA5285229281F4C00385DAB /* SPNSortListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA5285129281F4C00385DAB /* SPNSortListViewController.swift */; };
 		1EA528552928267700385DAB /* SPNRestaurantRatingEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA528542928267700385DAB /* SPNRestaurantRatingEntity.swift */; };
 		1EE7C52529230BD0004D3224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE7C52429230BD0004D3224 /* AppDelegate.swift */; };
@@ -61,6 +62,7 @@
 		1E3D31B5292AA953007A60CB /* TestSPNRestaurantListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSPNRestaurantListController.swift; sourceTree = "<group>"; };
 		1E3D31B7292AA967007A60CB /* TestSPNRestaurantListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSPNRestaurantListTableViewModel.swift; sourceTree = "<group>"; };
 		1E3D31BA292AA991007A60CB /* SPNRestaurantListMockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantListMockRepository.swift; sourceTree = "<group>"; };
+		1E3D31BF292B85BF007A60CB /* UIViewController+SPN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SPN.swift"; sourceTree = "<group>"; };
 		1EA5285129281F4C00385DAB /* SPNSortListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNSortListViewController.swift; sourceTree = "<group>"; };
 		1EA528542928267700385DAB /* SPNRestaurantRatingEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNRestaurantRatingEntity.swift; sourceTree = "<group>"; };
 		1EE7C52129230BD0004D3224 /* TheSpoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSpoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,14 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		1E3D31BE292B85AF007A60CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E3D31BF292B85BF007A60CB /* UIViewController+SPN.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1EA528532928266100385DAB /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +216,7 @@
 		1EE7C52329230BD0004D3224 /* TheSpoon */ = {
 			isa = PBXGroup;
 			children = (
+				1E3D31BE292B85AF007A60CB /* Extensions */,
 				1E3D31B1292979E4007A60CB /* Common */,
 				1E3D31B0292979D6007A60CB /* Detail */,
 				1E3D31AB29297494007A60CB /* Sorting */,
@@ -391,6 +402,7 @@
 				1EE7C57229241765004D3224 /* SPNRestaurantListRemoteRepository.swift in Sources */,
 				1E3D31A829296EA2007A60CB /* SPNError.swift in Sources */,
 				1EE7C56A29241163004D3224 /* SPNRestaurantAggregateRatingsDTO.swift in Sources */,
+				1E3D31C0292B85BF007A60CB /* UIViewController+SPN.swift in Sources */,
 				1EE7C58A292453D0004D3224 /* SPNRestaurantPhotoEntity.swift in Sources */,
 				1E3D31AD292975D3007A60CB /* SPNRestaurantDetailItemView.swift in Sources */,
 				1EE7C57A29241A4B004D3224 /* HasRestaurantRepository.swift in Sources */,

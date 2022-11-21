@@ -46,7 +46,7 @@ final class SPNRestaurantListViewController: UIViewController {
                     strongSelf.tableView.reloadData()
                 }
             case .failure(let error):
-                print(error)
+                strongSelf.showAlert(with: error)
             }
         }
     }
